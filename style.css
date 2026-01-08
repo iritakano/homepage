@@ -8,13 +8,13 @@ body{
     font-size: 16px;
 }
 
-header{
+header, footer{
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.header-container, .main-container{
+.header-container, .main-container, .footer-container{
     display: flex;
     justify-content: center;
     width: 80%;
@@ -23,10 +23,10 @@ header{
 .header-container{
     align-items: center;
     flex-direction: row;
-    height: 100vh;
+    min-height: 100vh;
 }
 
-.img-container{
+header .img-container{
     position: relative;
 }
 
@@ -133,3 +133,50 @@ main{
     margin-top: 10px;
 }
 
+footer{
+    width: 100vw;
+    height: 70vh;
+    border: solid 1px red;
+    margin-top: 100px;
+}
+
+.footer-container{
+    height: 100%;
+}
+
+footer img{
+    height: 75%;
+}
+
+#contact-description{
+    font-size: 1rem;
+    margin: 20px 0;
+    line-height: 1.2;
+}
+
+.contact-info{
+    line-height: 1.5;
+    margin-top: 30px;
+}
+
+.contact{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.contacts{
+    margin: 20px 0 40px 0;
+}
+
+.footer-icons{
+    display: flex;
+    font-size: 1.8rem;
+    gap: 20px; 
+}
+
+footer .img-container{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
