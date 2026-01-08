@@ -4,8 +4,19 @@
     box-sizing: border-box;
 }
 
+:root{
+    --maroon: #5E2A25;
+    --olive: #8F7C3a;
+    --beige: #E1D3a9;
+    --green: #534b31;
+    --orange: #534b31;
+    --brown: #734f31;
+}
+
 body{
     font-size: 16px;
+    background-color: var(--beige);
+    font-family: quicksand;
 }
 
 header, footer{
@@ -32,23 +43,28 @@ header .img-container{
 
 header img{
     height: 65vh;
+    box-shadow: -8px 8px 20px rgba(0, 0, 0, 0.3);
 }
 
 header h2{
     position: absolute;
     top: 87%;
-    left: 7.5%;
-    font-size: 2.8rem;
+    left: 4.5%;
+    font-size: 2.6rem;
+    color: var(--maroon);
+    text-shadow: 2px 2px 3px antiquewhite;
 }
 
 .header-details{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    border: 1px solid black;
+    margin-left: -10px;
     height: 50%;
     padding: 30px;
-    background-color: white;
+    background-color: var(--olive);
+    color: antiquewhite;
+    box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.3);
 }
 
 h3{
@@ -71,7 +87,7 @@ header::before {
   content: "";
   position: absolute;
   width: 100%;
-  background-color: lightblue;
+  background-color: var(--maroon);
   height: 80%;
   transform: skewY(-10deg);
   top: -20%;
@@ -99,10 +115,12 @@ main{
     gap: 25px;
     width: 100%;
     margin-top: 15px;
+    color: antiquewhite;
 }
 
 .project{
-    border: 1px solid black;
+    background-color: var(--brown);
+    box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.3);
 }
 
 .project-img{
@@ -110,8 +128,9 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid antiquewhite;
     font-size: 1.2rem;
+    background-color: var(--orange);
 }
 
 .project-details{
@@ -121,7 +140,7 @@ main{
 .project-links{
     display: flex;
     flex-direction: row;
-    gap: 52%;
+    gap: 49%;
 }
 
 .project-links{
@@ -136,8 +155,9 @@ main{
 footer{
     width: 100vw;
     height: 70vh;
-    border: solid 1px red;
     margin-top: 100px;
+    background-color: var(--maroon);
+    color: antiquewhite;
 }
 
 .footer-container{
@@ -146,6 +166,7 @@ footer{
 
 footer img{
     height: 75%;
+    border: 1px solid antiquewhite;
 }
 
 #contact-description{
@@ -179,4 +200,15 @@ footer .img-container{
     height: 100%;
     display: flex;
     align-items: center;
+}
+
+i:hover, .project-name:hover{
+    cursor: pointer;
+    color:rgb(170, 159, 145);
+    scale: 1.1;
+    transition: all 0.2s ease;
+}
+
+i, .project-name{
+    transition: all 0.2s ease;
 }
